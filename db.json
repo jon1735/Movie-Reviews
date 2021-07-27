@@ -1,42 +1,46 @@
 {
   "movies": [
     {
+      "id": 1,
       "name": "Shrek",
       "review": "This movie was so good and the voice acting was phenomenal! As the old saying goes: Shrek is love, Shrek is life",
       "summary": "A mean lord exiles fairytale creatures to the swamp of a grumpy ogre, who must go on a quest and rescue a princess for the lord in order to get his land back.",
       "image": "https://d2e111jq13me73.cloudfront.net/sites/default/files/styles/product_image_aspect_switcher_170w/public/product-images/csm-movie/shrek.jpg?itok=gAzk1Shh"
     },
     {
+      "id": 2,
       "name": "Madagascar",
       "review": "Madagascar is a world renowned movie deserving of its' many oscar nominations",
       "summary": "A group of animals who have spent all their life in a New York zoo end up in the jungles of Madagascar, and must adjust to living in the wild.",
       "image": "https://d2e111jq13me73.cloudfront.net/sites/default/files/styles/product_image_aspect_switcher_170w/public/product-images/csm-movie/madagascar-poster.jpg?itok=rPNRWg5k"
     },
     {
+      "id": 3,
       "name": "Pokemon 2000",
       "review": "Took my kids to see this movie just the other day, great fun for the whole family. Animation was absolutely superb. Makes me want to be a Pokemon master!",
       "summary": "Ash Ketchum must gather the three spheres of fire, ice and lightning in order to restore balance to the Orange Islands.",
       "image": "https://d2e111jq13me73.cloudfront.net/sites/default/files/styles/product_image_aspect_switcher_170w/public/product-images/csm-movie/pokemon-the-movie-2000-poster.jpg?itok=Cu0fLYl7"
     },
     {
+      "id": 4,
       "name": "Transformers",
       "review": "Not too thrilled about this subpar movie, they didn't even use enough explosions in the movie 1/10",
       "summary": "An ancient struggle between two Cybertronian races, the heroic Autobots and the evil Decepticons, comes to Earth, with a clue to the ultimate power held by a teenager.",
       "image": "https://www.iceposter.com/thumbs/MOV_wrgkf81n_b.jpg"
     },
     {
+      "id": 5,
       "name": "Harry Potter and the Chamber of Secrets",
       "review": "Harry Potter and all of his friends take on the secrets in the chambers beneath Hogwarts, leading them on a journey of self discovery, revalations, and sacrifice. A movie deserving of it's cult like following",
       "summary": "An ancient prophecy seems to be coming true when a mysterious presence begins stalking the corridors of a school of magic and leaving its victims paralyzed.",
       "image": "https://m.media-amazon.com/images/I/5129aHuP9UL._AC_SS450_.jpg"
+    },
+    {
+      "name": "Shrek 2 ",
+      "summary": "Shrek and Fiona travel to the Kingdom of Far Far Away, where Fiona's parents are King and Queen, to celebrate their marriage. When they arrive, they find they are not as welcome as they thought they would be.",
+      "review": "Shrek 2 is a hoot and a half for the whole family!",
+      "image": "https://m.media-amazon.com/images/M/MV5BMDJhMGRjN2QtNDUxYy00NGM3LThjNGQtMmZiZTRhNjM4YzUxL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
+      "id": 6
     }
   ]
 }
-
-
-
-
-
-
-
-

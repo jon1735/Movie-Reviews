@@ -1,10 +1,11 @@
 import React from "react";
+import MovieInfo from "./MovieInfo";
 
 
 function App() {
   return (
     <div className="App">
-      Welcome to the Movie review page!
+     <MovieInfo />
     </div>
   );
 }
