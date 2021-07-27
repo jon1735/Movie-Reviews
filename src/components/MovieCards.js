@@ -24,6 +24,7 @@ function MovieCards({ movies }) {
           <div className="review"></div>
         </div>
       </div>
+      <button>Delete</button>
     </Card>
 
   )

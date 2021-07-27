@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import { Form } from "semantic-ui-react";
+import index from "../index.css"
 
 function MovieForm({ onAddMovie }) {
   const [formData, setFormData] = useState ({
@@ -40,17 +41,19 @@ function MovieForm({ onAddMovie }) {
   
   return (
     <div>
-      <h3>Add a Pokemon!</h3>
+      <h3>Add a Movie!</h3>
       <form onSubmit={handleSubmit}>
         <Form.Group widths="equal">
           <Form.Input 
-          fluid label="Name"
-          placeholder="smallerinput"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
+            className={"input-field"}
+            fluid label="Name"
+            placeholder="Name"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
           />
           <Form.Input 
+            className={"input-field"}
             fluid label="summary" 
             placeholder="summary" 
             name="summary" 
@@ -58,6 +61,7 @@ function MovieForm({ onAddMovie }) {
             onChange={handleChange}
             />
           <Form.Input
+            className={"input-field"}
             fluid
             label="review"
             placeholder="review"
@@ -66,6 +70,7 @@ function MovieForm({ onAddMovie }) {
             onChange={handleChange}
           />
           <Form.Input
+            className={"input-field"}
             fluid
             label="image"
             placeholder="image"
