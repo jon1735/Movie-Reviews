@@ -3,9 +3,13 @@ import { Card } from "semantic-ui-react";
 
 
 
-function MovieCards({ movies }) {
+function MovieCards({ movies, onDeleteClick }) {
 
-  const { name, summary, image } = movies
+  const { id, name, summary, image } = movies
+
+  const handleDeleteClick = () => {
+    onDeleteClick(id)
+  }
 
 
 
@@ -24,7 +28,7 @@ function MovieCards({ movies }) {
           <div className="review"></div>
         </div>
       </div>
-      <button>Delete</button>
+      <button onClick={handleDeleteClick}>Delete {id}</button>
     </Card>
 
   )

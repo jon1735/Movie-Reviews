@@ -22,6 +22,13 @@ function MovieInfo() {
     return movie.name.toLowerCase().includes(movieSearch.toLowerCase())
   })
 
+  const handleDeleteClick = (id) => {
+    const deleteMovie = movies.filter(movie => {
+      return movie.id !== id
+    })
+    setMovies(deleteMovie)
+  }
+
   return (
     <Container>
       <h1>Welcome to the Movie Review Page!</h1>
@@ -37,6 +44,7 @@ function MovieInfo() {
         <br />
       <MovieCardList 
       movies={moviesRendered}
+      onDeleteClick={handleDeleteClick}
       />
     </Container>
   )
