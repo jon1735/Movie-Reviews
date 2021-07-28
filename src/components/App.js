@@ -1,11 +1,15 @@
 import React from "react";
-import MovieInfo from "./MovieInfo";
+import { Switch, Route } from "react-router";
+
+import NavBar from "./NavBar"
 
 
 function App() {
   return (
     <div className="App">
-     <MovieInfo />
+      <NavBar>
+        
+      </NavBar>
     </div>
   );
 }

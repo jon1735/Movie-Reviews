@@ -11,9 +11,7 @@ function MovieCards({ movies, onDeleteClick }) {
     onDeleteClick(id)
   }
 
-
-
-
+  
   return (
     <Card>
       <div>
