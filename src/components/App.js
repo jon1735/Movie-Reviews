@@ -14,9 +14,9 @@ function App() {
 
 //fucntion that handles the "updateMovie"... takes in updated movie and changes the state based on the change
 
-    const updateMovieReview = () => {
-      
-    }
+    // const updateMovieReview = () => {
+
+    // }
 
 
   return (
