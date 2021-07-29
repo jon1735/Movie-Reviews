@@ -35,4 +35,12 @@ In another tab, run `npm start` to start up our React app at `http://localhost:3
 
 This project has already been completed for the instructor to review. The reviewee should try adding a movie of their choice. If a movie can not be thought of, below this prompt i have added some data for the user to test the functionality of the application.
 
+Try adding the following data in the input fields under the: "MovieInfo" page...
 
+Name: Shrek 2
+
+Summary: Shrek and Fiona travel to the Kingdom of Far Far Away, where Fiona's parents are King and Queen, to celebrate their marriage. When they arrive, they find they are not as welcome as they thought they would be.
+
+Review: This movie is amazing!
+
+Image: https://m.media-amazon.com/images/M/MV5BMDJhMGRjN2QtNDUxYy00NGM3LThjNGQtMmZiZTRhNjM4YzUxL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX1000_.jpg

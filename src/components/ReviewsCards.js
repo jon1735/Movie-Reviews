@@ -8,7 +8,6 @@ function ReviewsCards({ movies }) {
   const { review, image, name, id } = movies
 
   const handleClick = () => {
-    console.log(id)
     const configObj = {
       method: "PATCH",
       headers: {
@@ -24,12 +23,7 @@ function ReviewsCards({ movies }) {
 
   const changeMovieReview = (event) => {
     setMovieReview(event.target.value)
-  }
-
-  // const changeMovieReview = movies.filter((id) => {
-  //   return id.review.toLowerCase().includes(movieReview.toLowerCase())
-  // })
-  
+  }  
 
   return (
         <Card>
@@ -44,7 +38,7 @@ function ReviewsCards({ movies }) {
               <div className="header">{name}</div>
             </div>
           </div>
-        <button onClick={handleClick}>Edit Review</button>
+        <button onClick={handleClick}>Submit Review</button>
         <input type="text" value={movieReview} onChange={changeMovieReview}></input>
         </Card>
   )
