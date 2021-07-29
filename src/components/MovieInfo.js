@@ -1,18 +1,11 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import { Container } from "semantic-ui-react";
 import MovieCardList from "./MovieCardList"
 import Search from "./Search"
 import MovieForm from "./MovieForm"
 
-function MovieInfo() {
-  const [movies, setMovies] = useState([])
+function MovieInfo({ movies, setMovies }) {
   const [movieSearch, setMovieSearch] = useState("")
-
-  useEffect(() => {
-    fetch(" http://localhost:3001/movies")
-      .then((r) => r.json())
-      .then(data => setMovies(data))
-  }, [])
 
   const handleAddNewMovie = (addNewMovie) => {
     setMovies([...movies, addNewMovie])

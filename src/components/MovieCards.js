@@ -11,7 +11,7 @@ function MovieCards({ movies, onDeleteClick }) {
     onDeleteClick(id)
   }
 
-  
+
   return (
     <Card>
       <div>
@@ -22,11 +22,8 @@ function MovieCards({ movies, onDeleteClick }) {
           <div className="header">{name}</div>
         </div>
           <div className="summary">Movie Summary: {summary}</div>
-        <div>
-          <div className="review"></div>
-        </div>
       </div>
-      <button onClick={handleDeleteClick}>Delete {id}</button>
+      <button onClick={handleDeleteClick}>Delete</button>
     </Card>
 
   )

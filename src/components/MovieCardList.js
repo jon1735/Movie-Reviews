@@ -30,5 +30,5 @@ function MovieCardList({ movies, onDeleteClick }) {
 }
 
 
-
 export default MovieCardList;
+
