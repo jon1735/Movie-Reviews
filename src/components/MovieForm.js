@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import { Form } from "semantic-ui-react"
-// import index from "../index.css"
 
 function MovieForm ({ onAddMovie }) {
   const [formData, setFormData] = useState({
