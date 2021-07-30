@@ -1,9 +1,8 @@
-import React, {useState} from "react";
-import { Card } from "semantic-ui-react";
+import React, { useState } from "react"
+import { Card } from "semantic-ui-react"
 
-
-function ReviewsCards({ movies, onAddMovieReview }) {
-  const [movieReview, setMovieReview] = useState("") 
+function ReviewsCards ({ movies, onAddMovieReview }) {
+  const [movieReview, setMovieReview] = useState("")
 
   const { review, image, name, id } = movies
 
@@ -14,18 +13,17 @@ function ReviewsCards({ movies, onAddMovieReview }) {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        "review": movieReview
+        review: movieReview
       })
     }
     fetch(`http://localhost:3001/movies/${id}`, configObj)
-      .then ((r) => r.json())
+      .then((r) => r.json())
       .then(onAddMovieReview)
   }
 
   const changeMovieReview = (event) => {
     setMovieReview(event.target.value)
-
-  }  
+  }
 
   return (
         <Card>
@@ -46,7 +44,4 @@ function ReviewsCards({ movies, onAddMovieReview }) {
   )
 }
 
-
-
 export default ReviewsCards
-

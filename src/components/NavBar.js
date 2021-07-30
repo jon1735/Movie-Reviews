@@ -8,10 +8,10 @@ const buttonStyles = {
   background: "black",
   variant: "dark",
   textDecoration: "none",
-  color: "white",
-};
+  color: "white"
+}
 
-function NavBar() {
+function NavBar () {
   return (
   <div className="buttonLinks">
       <NavLink
@@ -19,17 +19,17 @@ function NavBar() {
         exact
         style={buttonStyles}
         activeStyle={{
-          background: "black",
+          background: "black"
         }}
         >
-          MovieInfo    
+          MovieInfo
       </NavLink>
       <NavLink
         to="/reviews"
         exact
         style={buttonStyles}
         activeStyle={{
-          background: "black",
+          background: "black"
         }}
       >
         Reviews
@@ -37,7 +37,5 @@ function NavBar() {
   </div>
   )
 }
-
-
 
 export default NavBar

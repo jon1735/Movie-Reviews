@@ -1,9 +1,8 @@
-import React from "react";
-import { Card } from "semantic-ui-react";
+import React from "react"
+import { Card } from "semantic-ui-react"
 import MovieCards from "./MovieCards"
 
-function MovieCardList({ movies, onDeleteClick }) {
-
+function MovieCardList ({ movies, onDeleteClick }) {
   const handleDeleteClick = (id) => {
     onDeleteClick(id)
     const configObj = {
@@ -17,9 +16,9 @@ function MovieCardList({ movies, onDeleteClick }) {
 
   return (
     <Card.Group itemsPerRow={3}>
-      
-        { movies.map( (movie) => 
-          <MovieCards 
+
+        { movies.map((movie) =>
+          <MovieCards
             key={movie.id}
             movies={movie}
             onDeleteClick={handleDeleteClick}
@@ -29,6 +28,4 @@ function MovieCardList({ movies, onDeleteClick }) {
   )
 }
 
-
-export default MovieCardList;
-
+export default MovieCardList

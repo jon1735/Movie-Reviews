@@ -1,51 +1,49 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react"
 import NavBar from "./NavBar"
 import MovieInfo from "./MovieInfo"
 import ReviewsList from "./ReviewsList"
 import { Switch, Route } from "react-router-dom"
 
-function App() {
+function App () {
   const [movies, setMovies] = useState([])
-    useEffect(() => {
-      fetch(" http://localhost:3001/movies")
-        .then((r) => r.json())
-        .then(data => setMovies(data))
-    }, [])
+  useEffect(() => {
+    fetch(" http://localhost:3001/movies")
+      .then((r) => r.json())
+      .then(data => setMovies(data))
+  }, [])
 
-//function that handles the "updateMovie"... takes in updated movie and changes the state based on the change
+  // function that handles the "updateMovie"... takes in updated movie and changes the state based on the change
 
-    const updateUserMovieReview = (updatedMovie) => {
-      const updatedMovies = movies.map(movie => {
-        if(movie.id === updatedMovie.id){
-          return updatedMovie
-        }else{
-          return movie
-        }
-      })
-      setMovies(updatedMovies)
-    }
+  const updateUserMovieReview = (updatedMovie) => {
+    const updatedMovies = movies.map(movie => {
+      if (movie.id === updatedMovie.id) {
+        return updatedMovie
+      } else {
+        return movie
+      }
+    })
+    setMovies(updatedMovies)
+  }
 
   return (
     <div className="App">
       <NavBar/>
       <Switch>
         <Route exact path="/">
-          <MovieInfo 
+          <MovieInfo
           movies={movies}
           setMovies={setMovies}
           />
         </Route>
         <Route path="/reviews">
-          <ReviewsList 
+          <ReviewsList
           movies={movies}
           onAddMovieReview={updateUserMovieReview}
           />
         </Route>
       </Switch>
     </div>
-  );
+  )
 }
 
-export default App;
-
-
+export default App

@@ -1,10 +1,10 @@
-import React, {useState} from "react";
-import { Container } from "semantic-ui-react";
+import React, { useState } from "react"
+import { Container } from "semantic-ui-react"
 import MovieCardList from "./MovieCardList"
 import Search from "./Search"
 import MovieForm from "./MovieForm"
 
-function MovieInfo({ movies, setMovies }) {
+function MovieInfo ({ movies, setMovies }) {
   const [movieSearch, setMovieSearch] = useState("")
 
   const handleAddNewMovie = (addNewMovie) => {
@@ -26,16 +26,16 @@ function MovieInfo({ movies, setMovies }) {
     <Container>
       <h1>Welcome to the Movie Review Page!</h1>
         <br />
-      <MovieForm 
+      <MovieForm
       onAddMovie={handleAddNewMovie}
       />
         <br />
-      <Search 
+      <Search
       movieSearch={movieSearch}
       onChangeMovieSearch={setMovieSearch}
       />
         <br />
-      <MovieCardList 
+      <MovieCardList
       movies={moviesRendered}
       onDeleteClick={handleDeleteClick}
       />
@@ -43,9 +43,4 @@ function MovieInfo({ movies, setMovies }) {
   )
 }
 
-
-
-
-
-export default MovieInfo;
-
+export default MovieInfo

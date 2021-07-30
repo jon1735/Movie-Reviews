@@ -1,9 +1,9 @@
-import React, {useState} from "react";
-import { Form } from "semantic-ui-react";
+import React, { useState } from "react"
+import { Form } from "semantic-ui-react"
 // import index from "../index.css"
 
-function MovieForm({ onAddMovie }) {
-  const [formData, setFormData] = useState ({
+function MovieForm ({ onAddMovie }) {
+  const [formData, setFormData] = useState({
     name: "",
     summary: "",
     review: "",
@@ -12,7 +12,7 @@ function MovieForm({ onAddMovie }) {
 
   const handleChange = (event) => {
     setFormData({
-      ...formData, 
+      ...formData,
       [event.target.name]: event.target.value
     })
   }
@@ -24,10 +24,10 @@ function MovieForm({ onAddMovie }) {
       name: formData.name,
       summary: formData.summary,
       review: formData.review,
-      image: formData.image 
+      image: formData.image
     }
 
-    fetch("http://localhost:3001/movies",{
+    fetch("http://localhost:3001/movies", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -35,16 +35,16 @@ function MovieForm({ onAddMovie }) {
       },
       body: JSON.stringify(addNewMovie)
     })
-        .then((r) => r.json())
-        .then(onAddMovie)
+      .then((r) => r.json())
+      .then(onAddMovie)
   }
-  
+
   return (
     <div>
       <h3>Add a Movie!</h3>
       <form onSubmit={handleSubmit} className="userInputs">
         <Form.Group widths="equal">
-          <Form.Input 
+          <Form.Input
             className={"input-field"}
             fluid label="Name"
             placeholder="Name"
@@ -52,11 +52,11 @@ function MovieForm({ onAddMovie }) {
             value={formData.name}
             onChange={handleChange}
           />
-          <Form.Input 
+          <Form.Input
             className={"input-field"}
-            fluid label="summary" 
-            placeholder="summary" 
-            name="summary" 
+            fluid label="summary"
+            placeholder="summary"
+            name="summary"
             value={formData.summary}
             onChange={handleChange}
             />
@@ -82,8 +82,7 @@ function MovieForm({ onAddMovie }) {
         <Form.Button className="submitButton">Submit</Form.Button>
       </form>
     </div>
-  );
+  )
 }
 
-
-export default MovieForm;
+export default MovieForm

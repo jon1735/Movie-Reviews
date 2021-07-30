@@ -1,16 +1,12 @@
-import React from "react";
-import { Card } from "semantic-ui-react";
+import React from "react"
+import { Card } from "semantic-ui-react"
 
-
-
-function MovieCards({ movies, onDeleteClick }) {
-
+function MovieCards ({ movies, onDeleteClick }) {
   const { id, name, summary, image } = movies
 
   const handleDeleteClick = () => {
     onDeleteClick(id)
   }
-
 
   return (
     <Card>
@@ -27,17 +23,6 @@ function MovieCards({ movies, onDeleteClick }) {
     </Card>
 
   )
-
-
-
-
-
-
-
 }
 
-
-
-
-
-export default MovieCards;
+export default MovieCards
