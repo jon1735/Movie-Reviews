@@ -91,3 +91,7 @@
 .reviewInput{
   height: 50px;
 }
+
+.deleteButton{
+  position:absolute;
+}

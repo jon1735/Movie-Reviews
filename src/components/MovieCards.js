@@ -19,7 +19,7 @@ function MovieCards ({ movies, onDeleteClick }) {
         </div>
           <div className="summary">Movie Summary: {summary}</div>
       </div>
-      <button onClick={handleDeleteClick}>Delete</button>
+      <button className="deleteButton" onClick={handleDeleteClick}>Delete</button>
     </Card>
 
   )

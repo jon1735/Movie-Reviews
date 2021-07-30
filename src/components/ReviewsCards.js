@@ -31,15 +31,15 @@ function ReviewsCards ({ movies, onAddMovieReview }) {
             <div className="image">
               <img src={image} alt={name} width="150" height="200"/>
             </div>
-            <div>
-              <div className="review">Viewer Review: {review}</div>
-            </div>
             <div className="content">
               <div className="header">{name}</div>
             </div>
+            <div>
+              <div className="review">Viewer Review: {review}</div>
+            </div>
           </div>
         <button onClick={handleClick}>Submit Review</button>
-        <input className="reviewInput" type="text" value={movieReview} onChange={changeMovieReview}></input>
+        <input className="reviewInput" type="text" placeholder="Enter User Review"value={movieReview} onChange={changeMovieReview}></input>
         </Card>
   )
 }
