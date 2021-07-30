@@ -3,6 +3,7 @@
   background-image: url(https://cutewallpaper.org/21/theatre-backgrounds/Cinema-background-with-movie-objects-Vector-Image-1823382-.jpg);
   background-size: cover;
   color: white;
+  position: relative;
 }
 
 .App-logo {
@@ -33,8 +34,10 @@
  height: 70px;
  width: 200px; 
  text-align: center;
- color: white
- ;
+ color: white;
+ margin-top: auto;
+ left: 50px;
+ top: 50px;
 }
 
 .content {
@@ -51,4 +54,40 @@
 
 .header{
   color: black;
+}
+
+.button{
+  position: relative;
+}
+
+.buttonLinks{
+  margin-right: auto;
+  position:absolute;
+  left: 50px;
+  top: 50px;
+}
+
+.cards{
+  padding: 140px;
+}
+
+.userInputs{
+  position:relative;
+  left: 460px;
+}
+
+.submitButton{
+  position: relative;
+  left: -460px;
+  padding: 30px;
+}
+
+.reviewCards{
+  padding: 10px;
+  width: 500px;
+  height: 290px;
+}
+
+.reviewInput{
+  height: 50px;
 }

@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { Card } from "semantic-ui-react";
 
 
-function ReviewsCards({ movies }) {
+function ReviewsCards({ movies, onAddMovieReview }) {
   const [movieReview, setMovieReview] = useState("") 
 
   const { review, image, name, id } = movies
@@ -18,6 +18,8 @@ function ReviewsCards({ movies }) {
       })
     }
     fetch(`http://localhost:3001/movies/${id}`, configObj)
+      .then ((r) => r.json())
+      .then(onAddMovieReview)
   }
 
   const changeMovieReview = (event) => {
@@ -27,7 +29,7 @@ function ReviewsCards({ movies }) {
 
   return (
         <Card>
-          <div>
+          <div className="reviewCards">
             <div className="image">
               <img src={image} alt={name} width="150" height="200"/>
             </div>
@@ -39,7 +41,7 @@ function ReviewsCards({ movies }) {
             </div>
           </div>
         <button onClick={handleClick}>Submit Review</button>
-        <input type="text" value={movieReview} onChange={changeMovieReview}></input>
+        <input className="reviewInput" type="text" value={movieReview} onChange={changeMovieReview}></input>
         </Card>
   )
 }

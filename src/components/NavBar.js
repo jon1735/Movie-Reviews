@@ -5,21 +5,21 @@ const buttonStyles = {
   width: "100px",
   padding: "8px",
   margin: "0 5px 5px",
-  background: "red",
+  background: "black",
   variant: "dark",
   textDecoration: "none",
-  color: "white"
+  color: "white",
 };
 
 function NavBar() {
   return (
-  <div>
+  <div className="buttonLinks">
       <NavLink
         to="/"
         exact
         style={buttonStyles}
         activeStyle={{
-          background: "red",
+          background: "black",
         }}
         >
           MovieInfo    
@@ -29,7 +29,7 @@ function NavBar() {
         exact
         style={buttonStyles}
         activeStyle={{
-          background: "red",
+          background: "black",
         }}
       >
         Reviews

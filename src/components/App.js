@@ -14,10 +14,16 @@ function App() {
 
 //function that handles the "updateMovie"... takes in updated movie and changes the state based on the change
 
-    // const updateMovieReview = () => {
-
-    // }
-
+    const updateUserMovieReview = (updatedMovie) => {
+      const updatedMovies = movies.map(movie => {
+        if(movie.id === updatedMovie.id){
+          return updatedMovie
+        }else{
+          return movie
+        }
+      })
+      setMovies(updatedMovies)
+    }
 
   return (
     <div className="App">
@@ -32,6 +38,7 @@ function App() {
         <Route path="/reviews">
           <ReviewsList 
           movies={movies}
+          onAddMovieReview={updateUserMovieReview}
           />
         </Route>
       </Switch>
