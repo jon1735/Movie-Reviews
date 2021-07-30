@@ -18,7 +18,10 @@ function ReviewsCards ({ movies, onAddMovieReview }) {
     }
     fetch(`http://localhost:3001/movies/${id}`, configObj)
       .then((r) => r.json())
-      .then(onAddMovieReview)
+      .then((data) => {
+        onAddMovieReview(data)
+        setMovieReview("")
+      })
   }
 
   const changeMovieReview = (event) => {
