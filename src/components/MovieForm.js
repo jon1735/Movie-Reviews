@@ -36,7 +36,15 @@ function MovieForm ({ onAddMovie }) {
       body: JSON.stringify(addNewMovie)
     })
       .then((r) => r.json())
-      .then(onAddMovie)
+      .then((data) => {
+        onAddMovie(data)
+        setFormData({
+          name: "",
+          summary: "",
+          review: "",
+          image: ""
+        })
+      })
   }
 
   return (
