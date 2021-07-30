@@ -40,9 +40,9 @@ function MovieForm ({ onAddMovie }) {
   }
 
   return (
-    <div>
+    <div value="">
       <h3>Add a Movie!</h3>
-      <form onSubmit={handleSubmit} className="userInputs">
+      <form onSubmit={handleSubmit} className="userInputs" value="">
         <Form.Group widths="equal">
           <Form.Input
             className={"input-field"}

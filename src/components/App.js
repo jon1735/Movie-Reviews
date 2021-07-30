@@ -12,8 +12,6 @@ function App () {
       .then(data => setMovies(data))
   }, [])
 
-  // function that handles the "updateMovie"... takes in updated movie and changes the state based on the change
-
   const updateUserMovieReview = (updatedMovie) => {
     const updatedMovies = movies.map(movie => {
       if (movie.id === updatedMovie.id) {

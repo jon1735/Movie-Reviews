@@ -4,20 +4,21 @@ module.exports = {
     es2021: true
   },
   extends: [
-    'plugin:react/recommended',
-    'standard'
+    "plugin:react/recommended",
+    "standard"
   ],
   parserOptions: {
     ecmaFeatures: {
       jsx: true
     },
     ecmaVersion: 12,
-    sourceType: 'module'
+    sourceType: "module"
   },
   plugins: [
-    'react'
+    "react"
   ],
   rules: {
-    quotes: ['error', 'double']
+    quotes: ["error", "double"],
+    "react/prop-types": 0
   }
 }
