@@ -12,7 +12,7 @@ function App() {
         .then(data => setMovies(data))
     }, [])
 
-//fucntion that handles the "updateMovie"... takes in updated movie and changes the state based on the change
+//function that handles the "updateMovie"... takes in updated movie and changes the state based on the change
 
     // const updateMovieReview = () => {
 

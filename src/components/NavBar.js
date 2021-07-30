@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom"
 
 const buttonStyles = {
   width: "100px",
-  padding: "10px",
-  margin: "0 6px 6px",
+  padding: "8px",
+  margin: "0 5px 5px",
   background: "red",
   variant: "dark",
   textDecoration: "none",

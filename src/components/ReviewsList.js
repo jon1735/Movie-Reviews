@@ -7,7 +7,7 @@ function ReviewsList({ movies }) {
 
 
     return (
-    <Card.Group itemsPerRow={3}>
+    <Card.Group itemsPerRow={3} className="cards">
       { movies.map( (movie) => 
         <ReviewsCards
           key={movie.id}

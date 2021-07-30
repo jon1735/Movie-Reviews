@@ -17,14 +17,14 @@ function MovieCardList({ movies, onDeleteClick }) {
 
   return (
     <Card.Group itemsPerRow={3}>
-
-      { movies.map( (movie) => 
-        <MovieCards 
-          key={movie.id}
-          movies={movie}
-          onDeleteClick={handleDeleteClick}
-        />
-      )}
+      
+        { movies.map( (movie) => 
+          <MovieCards 
+            key={movie.id}
+            movies={movie}
+            onDeleteClick={handleDeleteClick}
+          />
+        )}
     </Card.Group>
   )
 }

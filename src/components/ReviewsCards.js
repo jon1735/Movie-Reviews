@@ -20,9 +20,9 @@ function ReviewsCards({ movies }) {
     fetch(`http://localhost:3001/movies/${id}`, configObj)
   }
 
-
   const changeMovieReview = (event) => {
     setMovieReview(event.target.value)
+
   }  
 
   return (
