@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom"
 
 const buttonStyles = {
   width: "100px",
-  padding: "8px",
+  padding: "20px",
   margin: "0 5px 5px",
   background: "black",
   variant: "dark",
@@ -22,7 +22,7 @@ function NavBar () {
           background: "black"
         }}
         >
-          MovieInfo
+          Home
       </NavLink>
       <NavLink
         to="/reviews"
